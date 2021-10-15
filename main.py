@@ -23,9 +23,9 @@ forward, backward, right, left
 
 # This inventory is paired with specific characters
 inventory = {"Batman": {"Night Vision Goggles":
-                        {"description": "Use the Night Vision Goggles to see in the dark and find your way",
-                         "damage": 10, "protection": 0},
-                         },
+                        {"description": """Use the Night Vision Goggles to see
+                        in the dark and find your way""",
+                         "damage": 10, "protection": 0}},
              "Green Lantern": {"Power Ring":
                            {"description":
                             "Use this ring as a flashlight to find their way",
@@ -77,16 +77,16 @@ valid_hint = ["ring"]
 def character_intro():
     print("""
   You have chosen Batman as you character. You will use Batman to get out
-  of this maze. You can use an hint to complete a level. """
+  of this maze. You can use a hint to complete a level. """
           )
 
 # This function defines the intro for Green Lantern
 
 
 def character_intro_2():
-    print(
-        """ You have chosen Green Lantern as you character. You will use Green Lantern
-        to get out of this maze. You can use an hint to complete a level. """
+    print("""
+    You have chosen Green Lantern as you character. You will use Green Lantern
+        to get out of this maze. You can use a hint to complete a level. """
     )
 
 
@@ -754,6 +754,7 @@ def actions_9():
         actions_9()
 
 # This loop calls all the functions in order
+
 
 while True:
     if inventory_input == "Batman":
