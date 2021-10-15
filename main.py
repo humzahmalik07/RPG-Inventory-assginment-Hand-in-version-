@@ -18,6 +18,9 @@ Batman and Green Lantern need to find their way out and escape the temple.
 
 You can go only four directions to escape:
 forward, backward, right, left
+
+You also have an option to quit the game. The option is provided in the menu.
+
 """)
 
 
@@ -58,7 +61,7 @@ inventory_input = input("Batman or Green Lantern: ")
 
 # valid directions and actions to move
 
-valid_actions = ["forward", "backward", "left", "right"]
+valid_actions = ["forward", "backward", "left", "right", "quit"]
 
 
 # valid action or hint for Batman
@@ -146,6 +149,9 @@ def action_1():
     if action_input.lower() in valid_actions[3]:
         print(f" Wall ahead ")
         action_1()
+    if action_input.lower() in valid_actions [4]:
+        print(" You have quit the game ")
+        quit()
     if action_input.lower() in valid_actions_2[0]:
         print(f""" You have chosen to use the Night Vision Goggles.
             This helps you see better and gives you a hint for your
@@ -181,6 +187,9 @@ def action_2():
     if action_input.lower() in valid_actions[3]:
         print(f" Wall ahead ")
         action_2()
+    if action_input.lower() in valid_actions [4]:
+        print(" You have quit the game ")
+        quit()
     if action_input.lower() in valid_actions_2[0]:
         print(f""" You have chosen to use the Night Vision Goggles.
             This helps you see better and gives you a hint for your
@@ -216,6 +225,9 @@ def action_3():
     if action_input.lower() in valid_actions[3]:
         print(f" Wall ahead ")
         action_3()
+    if action_input.lower() in valid_actions [4]:
+        print(" You have quit the game ")
+        quit()
     if action_input.lower() in valid_actions_2[0]:
         print(f""" You have chosen to use the Night Vision Goggles.
             This helps you see better and gives you a hint for your
@@ -251,6 +263,9 @@ def action_4():
     if action_input.lower() in valid_actions[3]:
         print(f" Turn right to walk towards the exit ")
         action_5()
+    if action_input.lower() in valid_actions [4]:
+        print(" You have quit the game ")
+        quit()
     if action_input.lower() in valid_actions_2[0]:
         print(f""" You have chosen to use the Night Vision Goggles.
             This helps you see better and gives you a hint for your
@@ -286,6 +301,9 @@ def action_5():
     if action_input.lower() in valid_actions[3]:
         print(f" Wall ahead ")
         action_5()
+    if action_input.lower() in valid_actions [4]:
+        print(" You have quit the game ")
+        quit()
     if action_input.lower() in valid_actions_2[0]:
         print(f""" You have chosen to use the Night Vision Goggles.
             This helps you see better and gives you a hint for your
@@ -321,6 +339,9 @@ def action_6():
     if action_input.lower() in valid_actions[3]:
         print(f" Wall ahead ")
         action_6()
+    if action_input.lower() in valid_actions [4]:
+        print(" You have quit the game ")
+        quit()
     if action_input.lower() in valid_actions_2[0]:
         print(f""" You have chosen to use the Night Vision Goggles.
             This helps you see better and gives you a hint for your
@@ -356,6 +377,9 @@ def action_7():
     if action_input.lower() in valid_actions[3]:
         print(f" turn right towards the exit ")
         action_8()
+    if action_input.lower() in valid_actions [4]:
+        print(" You have quit the game ")
+        quit()
     if action_input.lower() in valid_actions_2[0]:
         print(f""" You have chosen to use the Night Vision Goggles.
             This helps you see better and gives you a hint for your
@@ -390,6 +414,9 @@ def action_8():
     if action_input.lower() in valid_actions[3]:
         print(f" Wall ahead ")
         action_8()
+    if action_input.lower() in valid_actions [4]:
+        print(" You have quit the game ")
+        quit()
     if action_input.lower() in valid_actions_2[0]:
         print(f""" You have chosen to use the Night Vision Goggles.
             This helps you see better and gives you a hint for your
@@ -425,6 +452,9 @@ def action_9():
     if action_input.lower() in valid_actions[3]:
         print(f" Wall ahead ")
         action_9()
+    if action_input.lower() in valid_actions [4]:
+        print(" You have quit the game ")
+        quit()
     if action_input.lower() in valid_actions_2[0]:
         print(f""" You have chosen to use the Night Vision Goggles.
             This helps you see better and gives you a hint for your
@@ -461,6 +491,9 @@ def actions_1():
     if action_input.lower() in valid_actions[3]:
         print(f" Wall ahead ")
         actions_1()
+    if action_input.lower() in valid_actions [4]:
+        print(" You have quit the game ")
+        quit()
     if action_input.lower() in valid_hint[0]:
         print("""You have chosen to use the Power Ring.
       This ring is used a flashlight and gives you a hint for your
@@ -496,6 +529,9 @@ def actions_2():
     if action_input.lower() in valid_actions[3]:
         print(f" Wall ahead ")
         actions_2()
+    if action_input.lower() in valid_actions [4]:
+        print(" You have quit the game ")
+        quit()
     if action_input.lower() in valid_hint[0]:
         print("""You have chosen to use the Power Ring.
       This ring is used a flashlight and gives you a hint for your next
@@ -530,6 +566,9 @@ def actions_3():
     if action_input.lower() in valid_actions[3]:
         print(f" Wall ahead ")
         actions_3()
+    if action_input.lower() in valid_actions [4]:
+        print(" You have quit the game ")
+        quit()
     if action_input.lower() in valid_hint[0]:
         print("""You have chosen to use the Power Ring.
       This ring is used a flashlight and gives you a hint for your next
@@ -570,6 +609,9 @@ def actions_4():
       This ring is used a flashlight and gives you a hint for your next
       direction. The direction is right.
       Enter right when the menu restarts. """)
+    if action_input.lower() in valid_actions [4]:
+        print(" You have quit the game ")
+        quit()
     if action_input.lower not in valid_hint:
         print("Invalid direction!")
         actions_4()
@@ -600,6 +642,9 @@ def actions_5():
     if action_input.lower() in valid_actions[3]:
         print(f" Wall ahead ")
         actions_5()
+    if action_input.lower() in valid_actions [4]:
+        print(" You have quit the game ")
+        quit()
     if action_input.lower() in valid_hint[0]:
         print("""You have chosen to use the Night Vision Goggles.
       This ring is used a flashlight and gives you a hint for your next
@@ -635,6 +680,9 @@ def actions_6():
     if action_input.lower() in valid_actions[3]:
         print(f" Wall ahead ")
         actions_6()
+    if action_input.lower() in valid_actions [4]:
+        print(" You have quit the game ")
+        quit()
     if action_input.lower() in valid_hint[0]:
         print("""You have chosen to use the Night Vision Goggles.
       This ring is used a flashlight and gives you a hint for your next
@@ -670,6 +718,9 @@ def actions_7():
     if action_input.lower() in valid_actions[3]:
         print(f" turn right towards the exit ")
         actions_8()
+    if action_input.lower() in valid_actions [4]:
+        print(" You have quit the game ")
+        quit()
     if action_input.lower() in valid_hint[0]:
         print("""You have chosen to use the Night Vision Goggles.
       This ring is used a flashlight and gives you a hint for your next
@@ -705,6 +756,9 @@ def actions_8():
     if action_input.lower() in valid_actions[3]:
         print(f" Wall ahead ")
         actions_8()
+    if action_input.lower() in valid_actions [4]:
+        print(" You have quit the game ")
+        quit()
     if action_input.lower() in valid_hint[0]:
         print("""You have chosen to use the Night Vision Goggles.
       This ring is used a flashlight and gives you a hint for your next
@@ -741,6 +795,9 @@ def actions_9():
     if action_input.lower() in valid_actions[3]:
         print(f" Wall ahead ")
         actions_9()
+    if action_input.lower() in valid_actions [4]:
+        print(" You have quit the game ")
+        quit()
     if action_input.lower() in valid_hint[0]:
         print("""You have chosen to use the Night Vision Goggles.
       This ring is used a flashlight and gives you a hint for your next
