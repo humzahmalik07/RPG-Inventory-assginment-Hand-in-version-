@@ -30,7 +30,7 @@ You also have an option to quit the game. The option is provided in the menu.
 inventory = {"Batman": {"Night Vision Goggles":
                         {"description": """Use the Night Vision Goggles to see
                         in the dark and find your way""",
-                         "damage": 10, "protection": 0}},
+                         "damage": 0, "protection": 0}},
              "Green Lantern": {"Power Ring":
                            {"description":
                             "Use this ring as a flashlight to find their way",
@@ -83,16 +83,16 @@ def character_intro():
     """ Prints out the character intro for Batman """
     print("""
   You have chosen Batman as you character. You will use Batman to get out
-  of this maze. You can use a hint to complete a level. """
-          )
+  of this maze. You can use a hint to complete a level. 
+  """)
 
 
 def character_intro_2():
     """ Prints out the character intro for Green Lantern """
     print("""
     You have chosen Green Lantern as you character. You will use Green Lantern
-        to get out of this maze. You can use a hint to complete a level. """
-    )
+        to get out of this maze. You can use a hint to complete a level.
+         """)
 
 
 def menu():
@@ -775,8 +775,8 @@ def actions_9():
 
 while True:
     if inventory_input == "Batman":
-        player_inventory("Batman", inventory)
         character_intro()
+        player_inventory("Batman", inventory)
         action_1()
         action_2()
         action_3()
@@ -788,8 +788,8 @@ while True:
         action_9()
         quit()
     if inventory_input == "Green Lantern":
-        player_inventory("Green Lantern", inventory)
         character_intro_2()
+        player_inventory("Green Lantern", inventory)
         actions_1()
         actions_2()
         actions_3()
