@@ -4,6 +4,14 @@ All important changes of this project will be documented here
 ## [0.0.3] 2021-08-15
 ### Added 
 - A quit option is added
+- Docstrings are added
+- The file"game.py" was created
+
+### Changed
+- File "main.py" is replaced with "game.py"
+
+### removed
+- The file "main.py" was removed
 
 ## [0.0.2] 2021-07-30
 ### Added
